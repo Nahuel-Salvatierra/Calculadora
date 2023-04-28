@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora Básica</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="display" id="display"></div>
+    <div class="buttons">
+      <div class="contenedor-numeros">
+
+        <button class="number" id="boton1" onclick="addnum('1')">1</button>
+        <button class="number" id="boton2" onclick="addnum('2')">2</button>
+        <button class="number" id="boton3" onclick="addnum('3')">3</button>
+      </div>
+      <div class="contenedor-numeros">
+        <button class="number" id="boton4" onclick="addnum('4')">4</button>
+        <button class="number" id="boton5" onclick="addnum('5')">5</button>
+        <button class="number" id="boton6" onclick="addnum('6')">6</button>
+      </div>
+      <div class="contenedor-numeros">
+        <button class="number" id="boton7" onclick="addnum('7')">7</button>
+        <button class="number" id="boton8" onclick="addnum('8')">8</button>
+        <button class="number" id="boton0" onclick="addnum('9')">9</button>
+      </div>
+      <button class="number" id="boton" onclick="addnum('0')">0</button>
+      <button class="clear" onclick="clearall()">C</button>
+      <button class="equal" onclick="igual()">=</button>
+
+      <button class="operator" id='suma' onclick="addoperator('+')">+</button>
+      <button class="operator" onclick="addoperator('-')">-</button>
+      <button class="operator" onclick="addoperator('*')">*</button>
+      <button class="operator" onclick="addoperator('/')">/</button>
+
+    </div>
+  </div>
+  <script src="calculadora.js"></script>
+</body>
+
+</html>
